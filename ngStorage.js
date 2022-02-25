@@ -74,7 +74,8 @@
      * @requires $window
      */
 
-    .provider('$sessionStorage', _storageProvider('sessionStorage'));
+    .provider('$sessionStorage', _storageProvider('sessionStorage'))
+    .name;
 
     function _storageProvider(storageType) {
         var providerWebStorage = isStorageSupported(window, storageType);
